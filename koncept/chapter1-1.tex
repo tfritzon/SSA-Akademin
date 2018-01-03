@@ -44,17 +44,19 @@ En atom består dels av en kärna som är sammansatt av protoner och neutroner,
 dels av elektroner, som kretsar omkring kärnan.
 
 \begin{itemize}
-	\item Protonerna är positivt (+) laddade
-	\item Neutronerna är neutrala, ej laddade
-	\item Elektronerna är negativt (-) laddade.
+\item Protonerna är positivt (+) laddade
+\item Neutronerna är neutrala, ej laddade
+\item Elektronerna är negativt (-) laddade.
 \end{itemize}
 
-\begin{marginfigure}%%{L}{0.5\textwidth}
-  \includegraphics{images/cropped_pdfs/bild_2_1-01.pdf}
-  \caption{Atomernas uppbyggnad}
-  \label{fig:BildII1-1}
-  \vspace{-20pt}
-\end{marginfigure}
+%% \begin{marginfigure}%%{L}{0.5\textwidth}
+%%   \includegraphics{images/cropped_pdfs/bild_2_1-01.pdf}
+%%   \caption{Atomernas uppbyggnad}
+%%   \label{fig:BildII1-1}
+%%   \vspace{-20pt}
+%% \end{marginfigure}
+
+\smallfig{images/cropped_pdfs/bild_2_1-01.pdf}{Atomernas uppbyggnad}{fig:BildII1-1}
 
 Elektronerna brukar förenklat beskrivas som att de kretsar i banor omkring atomkärnorna, 
 liksom planeterna kretsar i banor omkring sina solar, vilket illustreras i 
@@ -211,7 +213,6 @@ När en spänning läggs på materialet kommer den fria elektronen att vandra mo
 den positiva polen.
 Materialet är N-ledande.
 
-\subsubsection{P-ledning --- ''hålledning''}
 \subsubsection{P-ledning -- ''hålledning''}
 \index{halvledare!P-ledning}
 
@@ -235,18 +236,20 @@ Materialet är då P-ledande.
 \index{symbol!\(U\) spänning}
 \index{symbol!\(V\) spänning}
 
-Bild \ref{fig:BildII1-2} illustrerar ett tankeförsök med ett rör med kulor i. 
+%%Bild \ref{fig:BildII1-2} illustrerar ett tankeförsök med ett rör med kulor i. 
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-02.pdf}
-\caption{Tankeförsök med kulor i ett rör}
-\label{fig:BildII1-2}
-\end{center}
-\end{figure*}
+%% \begin{figure*}
+%% \begin{center}
+%% \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-02.pdf}
+%% \caption{Tankeförsök med kulor i ett rör}
+%% \label{fig:BildII1-2}
+%% \end{center}
+%% \end{figure*}
+
+%%\largefig{images/cropped_pdfs/bild_2_1-02.pdf}
+%%         {Tankeförsök med kulor i ett rör}{fig:BildII1-2}
 
 Bild \ref{fig:BildII1-2} illustrerar ett tankeförsök med ett rör med kulor i.
-
 Materialet i röret tänks motsvara atomstrukturen i en strömledare och kulorna
 de fria elektronerna.
 Tänker man sig ett slag mot en ände av röret så flyttar det sig av den energi
@@ -254,12 +257,15 @@ som tillförs.
 På grund av obundenheten till röret följer av masströgheten kulorna inte med
 röret, utan hamnar i dess ena ände.
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\textwidth]{images/cropped_pdfs/bild_2_1-02.pdf}
-	\caption{Tankeförsök med kulor i ett rör}
-	\label{fig:BildII1-2}
-\end{figure}
+%% \begin{figure}
+%% 	\centering
+%% 	\includegraphics[width=0.7\textwidth]{images/cropped_pdfs/bild_2_1-02.pdf}
+%% 	\caption{Tankeförsök med kulor i ett rör}
+%% 	\label{fig:BildII1-2}
+%% \end{figure}
+
+\mediumfig[0.85]{images/cropped_pdfs/bild_2_1-02.pdf}
+          {Tankeförsök med kulor i ett rör}{fig:BildII1-2}
 
 Att kulorna samlas i ena änden av röret tänks motsvara ett elektronöverskott i
 ena änden av en ledare och ett motsvarande underskott i den andra änden.
@@ -270,12 +276,10 @@ Olika stora elektriska laddningar vid polerna innebär att de sinsemellan har
 olika potential.
 Potentialskillnaden kallas spänning.
 
-Likspänning innebär ett överskott av elektroner och alltid vid samma
-anslutningspol.
-
-Växelspänning innebär ett överskott av elektroner, omväxlande vid den ena
-anslutningspolen och den andra.
-
+{\em Likspänning} innebär ett överskott av elektroner och alltid vid samma
+anslutningspol.\\
+{\em Växelspänning} innebär ett överskott av elektroner, omväxlande vid den ena
+anslutningspolen och den andra.\\
 Måttenheten för spänning är \unit{volt} som betecknas \unit{[V]}.
 I formler betecknas spänning med
 
@@ -297,19 +301,27 @@ effektutvecklingen 1 watt [W].
 
 \subsection{Symboler}
 
-%\begin{wrapfigure}[6]{R}{0.4\textwidth}
-\begin{marginfigure}
-%  \begin{mdframed}
-    \begin{circuitikz}
-      \draw
-      (3,1) to[battery1] (1,1)
-      ;
-    \end{circuitikz}
-    \caption{Schemasymbol för batteri}
-    \label{fig:bildII2-batteri}
-%  \end{mdframed}
-\end{marginfigure}
-%\end{wrapfigure}
+%% %\begin{wrapfigure}[6]{R}{0.4\textwidth}
+%% \begin{marginfigure}
+%% %  \begin{mdframed}
+%%     \begin{circuitikz}
+%%       \draw
+%%       (3,1) to[battery1] (1,1)
+%%       ;
+%%     \end{circuitikz}
+%%     \caption{Schemasymbol för batteri}
+%%     \label{fig:bildII2-batteri}
+%% %  \end{mdframed}
+%% \end{marginfigure}
+%% %\end{wrapfigure}
+
+\smalltikz{
+  \begin{circuitikz}
+    \draw
+    (3,1) to[battery1] (1,1)
+    ;
+  \end{circuitikz}
+}{Schemasymbol för batteri}{fig:bildII2-batteri}
 
 \marginnote{Fördjupning}
 
@@ -329,7 +341,6 @@ Se även kapitel \ref{komponenter}.
 \index{ampere (A)}
 \index{enheter!ampere (A)}
 \index{symbol!\(I\) ström}
-
 När en sluten strömkrets innehåller en spänningskälla, kan en
 laddningsutjämning ske genom kretsen.
 Det innebär att fria elektroner förflyttar sig genom kretsen i riktning från
@@ -359,19 +370,11 @@ flyter genom ett givet ledartvärsnitt, vilket motsvarar laddningen
 \SI{1}{coloumb}.
 
 \subsection{Strömkrets}
-\marginnote{Fördjupning}
+\smallfig{images/cropped_pdfs/bild_2_1-03.pdf}
+         {Potential och spänning i en strömkrets}
+         {fig:BildII1-3}
 \index{strömkrets}
-
-%\begin{figure*}
-\begin{marginfigure}
-\includegraphics{images/cropped_pdfs/bild_2_1-03.pdf}
-\caption{Potential och spänning i en strömkrets}
-\label{fig:BildII1-3}
-\end{marginfigure}
-%\end{figure*}
-
 Bild \ref{fig:BildII1-3} visar potential och spänning i en strömkrets.
-
 En elektrisk strömkrets består av en eller flera energikällor och
 energiförbrukare.
 Källor kan vara batterier, nätaggregat etc.
@@ -381,6 +384,12 @@ före förbrukaren, strax efter förbrukaren finns ingen kö.
 Det uppstår en skillnad i laddningsmängd (en potentialskillnad) mellan varje
 punkt i en strömkrets, när det flyter ström.
 Man talar om spänningsfall.
+
+%% \begin{marginfigure}
+%% \includegraphics{images/cropped_pdfs/bild_2_1-03.pdf}
+%% \caption{Potential och spänning i en strömkrets}
+%% \label{fig:BildII1-3}
+%% \end{marginfigure}
 
 \subsection{Strömförlopp}
 \marginnote{Fördjupning}
@@ -450,8 +459,8 @@ först 1845 och sedan 1847.
 
 Kirchhoffs strömlag:
 
- Den algebraiska summan av alla strömmar (tagna med tecken) som flyter
- till eller från varje punkt i en elektrisk krets, är lika med noll.
+Den algebraiska summan av alla strömmar (tagna med tecken) som flyter
+till eller från varje punkt i en elektrisk krets, är lika med noll.
 
 \begin{equation*}
   I_1 + I_2 + I_3 + \cdots + I_n = 0
@@ -589,17 +598,21 @@ första ledet i formeln.
 Inom valt segment finns tre alternativ för det andra ledet i formeln.
 Välj det alternativ som innehåller två kända storheter.
 
-%\begin{figure*}[ht]
-\begin{marginfigure}
-  %%\begin{wrapfigure}{R}{0.3\textwidth}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-04.pdf}
-  \caption{''Formelsnurra'' för Ohms och Joules lagar}
-  \label{fig:BildII1-4}
-  %  \vspace{-100pt}
-  %%\end{wrapfigure}
-\end{marginfigure}
-%\end{figure*}
+%% %\begin{figure*}[ht]
+%% \begin{marginfigure}
+%%   %%\begin{wrapfigure}{R}{0.3\textwidth}
+%%   \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-04.pdf}
+%%   \caption{''Formelsnurra'' för Ohms och Joules lagar}
+%%   \label{fig:BildII1-4}
+%%   %  \vspace{-100pt}
+%%   %%\end{wrapfigure}
+%% \end{marginfigure}
+%% %\end{figure*}
 
+\smallfig{images/cropped_pdfs/bild_2_1-04.pdf}
+         {''Formelsnurra'' för Ohms och Joules lagar}
+         {fig:BildII1-4}
+         
 Bild \ref{fig:BildII1-4} visar ''Formelsnurra'' för Ohms och Joules lagar.
 
 Exempel:

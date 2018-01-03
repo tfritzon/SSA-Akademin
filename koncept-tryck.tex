@@ -143,9 +143,44 @@
 
 \renewcommand{\subsubsection}[1]{\paragraph{#1}}
 
+\newcommand{\smallfig}[4][1]{
+  \begin{marginfigure}
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+    \vspace{-20pt}
+  \end{marginfigure}
+}
+
+\newcommand{\mediumfig}[4][0.7]{
+  \begin{figure}
+    \centering
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+  \end{figure}
+}
+
+\newcommand{\largefig}[4][1]{
+  \begin{figure*}
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\smalltikz}[3]{
+  \begin{marginfigure}
+    #1
+    \caption{#2}
+    \label{#3}
+  \end{marginfigure}
+}
+  
 \usepackage{fontspec}
-\setmainfont{Bembo Std}
-\setsansfont{GillSans}
+\setmainfont{ETBembo}
 
 \begin{document}
 % Frontpage
