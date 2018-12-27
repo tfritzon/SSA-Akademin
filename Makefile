@@ -207,6 +207,9 @@ koncept.xml:	koncept.tex $(KONCEPT_FILES)
 koncept.webb:	koncept.xml
 	latexmlpost --dest=web/koncept.html --split --splitat=section --navigationtoc=context --css=web/style.css koncept.xml
 
+# Blå boken
+blabok.pdf: blabok.tex blabok/*.tex
+	pdflatex blabok.tex
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.

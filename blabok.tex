@@ -1,0 +1,98 @@
+\documentclass[10pt,openright]{report}
+\usepackage[utf8]{inputenc}
+
+\usepackage[swedish]{babel}
+
+%%\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+
+\usepackage[a4paper,twoside,twocolumn,inner=2.2cm,outer=1.9cm,columnsep=0.9cm,top=2cm,bottom=2cm]{geometry}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\cfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+%% This fixes page numbering on chapter head pages
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[LE,RO]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}}
+
+\usepackage[raggedright]{titlesec}
+\titlespacing{\chapter}{0pt}{1cm}{1cm}
+%%\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+%%\titleformat{\chapter}[hang]{\Huge\bfseries}{\fcolorbox{black}{black}{\color{white}\,\thechapter\,}~~}{0pt}{\Huge\bfseries}
+
+\begin{document}
+
+\part{Teknik}
+
+\chapter{Ellära}
+\input{blabok/t01.tex}
+
+\chapter{Komponenter -- egenskaper}
+\input{blabok/t02.tex}
+
+\chapter{Kretsar}
+\input{blabok/t03.tex}
+
+\chapter{Radiosändaren}
+\input{blabok/t04.tex}
+
+\chapter{Radiomottagaren}
+\input{blabok/t05.tex}
+
+\chapter{Kablar och antenner}
+\input{blabok/t06.tex}
+
+\chapter{Vågutbredning}
+\input{blabok/t07.tex}
+
+\chapter{Mätning, mätinstrument}
+\input{blabok/t08.tex}
+
+\chapter{Störningar}
+\input{blabok/t09.tex}
+
+\chapter{Elsäkerhet}
+\input{blabok/t10.tex}
+
+
+
+\part{Reglemente}
+
+\chapter{Fonetiska alfabetet}
+\input{blabok/r01.tex}
+
+\chapter{Q-koden}
+\input{blabok/r02.tex}
+
+\chapter{Amatörradioförkortningar}
+\input{blabok/r03.tex}
+
+\chapter{Internationella nödsignaler}
+\input{blabok/r04.tex}
+
+\chapter{Anropssignler}
+\input{blabok/r05.tex}
+
+\chapter{Frekvenser}
+\input{blabok/r06.tex}
+
+\chapter{ITU Radioreglemente}
+\input{blabok/r07.tex}
+
+\chapter{CEPT:s rekommendationer}
+\input{blabok/r08.tex}
+
+\chapter{Lagar}
+\input{blabok/r09.tex}
+
+\chapter{Dagbok (Loggbok)}
+\input{blabok/r10.tex}
+
+\end{document}
