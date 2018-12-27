@@ -208,6 +208,8 @@ koncept.webb:	koncept.xml
 	latexmlpost --dest=web/koncept.html --split --splitat=section --navigationtoc=context --css=web/style.css koncept.xml
 
 # Blå boken
+blabok: blabok.pdf
+
 blabok.pdf: blabok.tex blabok/*.tex
 	pdflatex blabok.tex
 
