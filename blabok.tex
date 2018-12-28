@@ -6,6 +6,11 @@
 \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
 \usepackage[a4paper,twoside,twocolumn,inner=2.2cm,outer=1.9cm,columnsep=0.9cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{fancyhdr}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{enumitem}  \setlist{nolistsep}
 
 \pagestyle{fancy}
 \lhead{}
@@ -39,6 +44,11 @@
 \sisetup{locale=FR}
 
 \begin{document}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.5ex}
+
+
 
 \setcounter{part}{19}
 \setcounter{chapter}{0}
