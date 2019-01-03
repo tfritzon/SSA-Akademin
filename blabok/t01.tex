@@ -90,3 +90,71 @@ mesta inom elektronik. Man använder symbolerna: \vbokstav{I}, \vbokstav{U} och 
 \end{array}
 \]
 
+För att lättare komma ihåg sambandet, kan man förenkla det hela genom nedanstående
+figurer. Täck över den symbol du vill beräkna.
+
+%%\smalltikz{\tikz\node[Formeldreieck]{$\dfrac{U}{R\cdot I}$};}{Formeltriangel för ohms lag.}{fig:ohmslag}
+
+\smalltikz{
+\begin{tikzpicture}%%BASE
+  \path (0,0) node [regular polygon,regular polygon sides=3,draw,minimum size=2cm] {};
+%%  \filldraw[fill=gray] (0,0.133) -- (0,-.499) -- (.86,-.499) -- (.5,0.133) -- cycle;
+  \draw (-0.499,0.133) |- (0.499,0.133);
+  \path (0,0.7) node [anchor=north] {$U$};
+  \path (-0.3,0.05) node [anchor=north] {$R$};
+  \path (0.3,0.05) node [anchor=north] {$I$};
+  \draw (0,0.133) -- (0,-0.5);
+  \path (0,0) node [anchor=north,fill=white] {$\cdot$};
+  \vspace{1ex}
+%%  \node[align=center,anchor=north] at (0,-1) { };
+  \node[align=center,anchor=north,text=white] at (0,-1) {$R=\dfrac{U}{I}$};
+\end{tikzpicture}
+\hspace{1ex}
+\begin{tikzpicture}%%U=RI
+  \path (0,0) node [regular polygon,regular polygon sides=3,draw,minimum size=2cm] {};
+  \filldraw[fill=gray] (-.5,0.133) -- (0,1) -- (.5,0.133) -- cycle;
+  \draw (-0.499,0.133) |- (0.499,0.133);
+  \path (0,0.7) node [anchor=north] {$U$};
+  \path (-0.3,0.05) node [anchor=north] {$R$};
+  \path (0.3,0.05) node [anchor=north] {$I$};
+  \draw (0,0.133) -- (0,-0.5);
+  \path (0,0) node [anchor=north,fill=white] {$\cdot$};
+  \node[align=center,anchor=north,text=white] at (0,-1) {$R=\dfrac{U}{I}$};
+  \node[align=center,anchor=north] at (0,-1.25) {$U=R\cdot I$};
+\end{tikzpicture}
+\hspace{1ex}
+\begin{tikzpicture}%%I=U/R
+  \path (0,0) node [regular polygon,regular polygon sides=3,draw,minimum size=2cm] {};
+  \filldraw[fill=gray] (0,0.133) -- (0,-.499) -- (.86,-.499) -- (.5,0.133) -- cycle;
+  \draw (-0.499,0.133) |- (0.499,0.133);
+  \path (0,0.7) node [anchor=north] {$U$};
+  \path (-0.3,0.05) node [anchor=north] {$R$};
+  \path (0.3,0.05) node [anchor=north] {$I$};
+  \draw (0,0.133) -- (0,-0.5);
+%%  \path (0,0) node [anchor=north,fill=white] {$\cdot$};
+  \node[align=center,anchor=north] at (0,-1) {$I=\dfrac{U}{R}$};
+\end{tikzpicture}
+\hspace{1ex}
+\begin{tikzpicture}%%R=U/I
+  \path (0,0) node [regular polygon,regular polygon sides=3,draw,minimum size=2cm] {};
+  \filldraw[fill=gray] (0,0.133) -- (0,-.499) -- (-.86,-.499) -- (-.5,0.133) -- cycle;
+  \draw (-0.499,0.133) |- (0.499,0.133);
+  \path (0,0.7) node [anchor=north] {$U$};
+  \path (-0.3,0.05) node [anchor=north] {$R$};
+  \path (0.3,0.05) node [anchor=north] {$I$};
+  \draw (0,0.133) -- (0,-0.5);
+%%  \path (0,0) node [anchor=north,fill=white] {$\cdot$};
+  \node[align=center,anchor=north] at (0,-1) {$R=\dfrac{U}{I}$};
+\end{tikzpicture}
+}{Formeltriangel för ohms lag.}{fig:ohmslag}
+
+%% \begin{tikzpicture}
+%%   \draw (0,0) -- (1,1.5);
+%%   \draw (1,1.5) -- (2,0);
+%%   \draw (0,0) -- (2,0);
+%%   \draw (0.45,0.66) -- (1.55,0.66);
+%%   \draw (1,0) -- (1,0.66);
+%%   \node at (1,1) {U};
+%%   \node at (0.66,0.25) {R};
+%%   \node at (1.25,0.25) {I};
+%% \end{tikzpicture}
